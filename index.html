@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT</title>
+
+    <style>
+        *{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .outermostbox{
+            margin-left: 200px;
+            margin-right: 250px;
+            height: 450px;
+        }
+        #hydrogen{
+            border: 2px solid black;
+            height: 40px;
+            width: 40px;
+            background-color: #aa0000;
+            color: white;
+        }
+        h4{
+            text-align: center;
+            margin-top: 10px;
+        }
+        .helium{
+            border: 2px solid black;
+            width: 40px;
+            margin-left: 850px;
+            height: 40px;
+            margin-top: -43px;
+            background-color: #ffcc00;
+        }
+        .helium_col{
+            border: 2px solid black;
+            width: 40px;
+            margin-left: 956px;
+            height: 40px;
+            margin-top: 10px;
+            background-color: #ffcc00;
+        }
+        .col1{
+            border: 2px solid black;
+            height: 40px;
+            width: 40px;
+            background-color: #89a02c;  
+            margin-top: 10px;
+        }
+        .l2{
+            display: flex;
+            margin-left: 300px;
+        }
+        .last2{
+            border: 1px solid black;
+            height: 40px;
+            width: 40px;
+            background-color: #47582e;  
+            margin-top: -30px;  
+            color: white;
+        }
+        .end{
+            display: flex;
+            margin-left: 300px;
+        }
+        .last{
+            border: 1px solid black;
+            height: 40px;
+            width: 40px;
+            background-color: #95bc5f;  
+            /* margin-top: 10px;   */
+        }
+        #col2_1{
+            border: 2px solid black;
+            height: 40px;
+            width: 40px;
+            margin-left: 50px;
+            margin-top: -313px;
+            background-color: #ff5555;
+        }
+        .col2_2{
+            border: 2px solid black;
+            height: 40px;
+            width: 40px;
+            margin-left: 50px;
+            margin-top: 10px;
+            background-color: #ff5555;
+        }
+        .col3_1{
+            border: 4px solid black; 
+            height: 36px;
+            width: 36px;
+            margin-left: 100px;
+            margin-top: -97px;
+            background-color: #ffe6d5;
+        }
+        .col3_2{
+            border: 4px solid black; 
+            height: 36px;
+            width: 36px;
+            margin-left: 100px;
+            margin-top: 10px;
+            background-color: #ffe6d5
+        }
+        #silicon{
+            border: 2px solid black;
+            width: 150px;
+            height: 130px;
+            background-color: #89a02c;
+            margin-left: 150px;
+            margin-top: -350px;
+        }
+        #sili{
+            font-size: 50px;
+        }
+        .blue1{
+            border: 2px solid black; 
+            height: 40px;
+            width: 40px;
+            margin-left: 150px;
+            margin-top: 10px; 
+            background-color: #0000fe;
+        }
+        .blue2_1{
+            border: 2px solid black; 
+            height: 40px;
+            width: 40px; 
+            margin-left: 200px;
+            margin-top: -206px;
+            background-color: #0000fe;
+        }
+        .blue2{
+            border: 2px solid black; 
+            height: 40px;
+            width: 40px; 
+            margin-left: 200px;
+            margin-top: 10px;
+            background-color: #0000fe;
+        }
+        .blue3_1{
+            border: 2px solid black; 
+            height: 40px;
+            width: 40px; 
+            margin-left: 250px;
+            margin-top: -206px;
+            background-color: #0000fe;
+        }
+        .blue3{
+            border: 2px solid black; 
+            height: 40px;
+            width: 40px; 
+            margin-left: 250px;
+            margin-top: 10px;
+            background-color: #0000fe;
+        }
+        .blue4_1{
+            border: 2px solid black; 
+            height: 40px;
+            width: 40px; 
+            margin-left: 300px;
+            margin-top: -206px;
+            background-color: #0000fe;
+        }
+        .blue4{
+            border: 2px solid black; 
+            height: 40px;
+            width: 40px; 
+            margin-left: 300px;
+            margin-top: 10px; 
+            background-color: #0000fe;
+        }
+
+        .blue5_1{
+            border: 2px solid black; 
+            height: 40px;
+            width: 40px; 
+            margin-left: 350px;
+            margin-top: -206px; 
+            background-color: #0000fe;
+        }
+        .blue5{
+            border: 2px solid black; 
+            height: 40px;
+            width: 40px; 
+            margin-left: 350px;
+            margin-top: 10px;
+            background-color: #0000fe;
+        }
+        .blue6_1{
+            border: 2px solid black; 
+            height: 40px;
+            width: 40px; 
+            margin-left: 400px;
+            margin-top: -206px; 
+            background-color: #0000fe;
+        }
+        .blue6{
+            border: 2px solid black; 
+            height: 40px;
+            width: 40px; 
+            margin-left: 400px;
+            margin-top: 10px;
+            background-color: #0000fe;
+        }
+        .blue7_1{
+            border: 2px solid black; 
+            height: 40px;
+            width: 40px; 
+            margin-left: 450px;
+            margin-top: -206px; 
+            background-color: #0000fe;
+        }
+        .blue7{
+            border: 2px solid black; 
+            height: 40px;
+            width: 40px; 
+            margin-left: 450px;
+            margin-top: 10px;
+            background-color: #0000fe;
+        }
+        .blue8_1{
+            border: 2px solid black; 
+            height: 40px;
+            width: 40px; 
+            margin-left: 500px;
+            margin-top: -206px; 
+            background-color: #0000fe;
+        }
+        .blue8{
+            border: 2px solid black; 
+            height: 40px;
+            width: 40px; 
+            margin-left: 500px;
+            margin-top: 10px;
+            background-color: #0000fe;
+        }
+        .blue9_1{
+            border: 2px solid black; 
+            height: 40px;
+            width: 40px; 
+            margin-left: 550px;
+            margin-top: -206px; 
+            background-color: #0000fe;
+        }
+        .blue9{
+            border: 2px solid black; 
+            height: 40px;
+            width: 40px; 
+            margin-left: 550px;
+            margin-top: 10px;
+            background-color: #0000fe;
+        }
+        .col13_1{
+            border: 2px solid black;
+            height: 40px;
+            width: 40px;
+            margin-left: 600px;
+            margin-top: -313px;
+            background-color: #aa0087;
+        }
+        .col13{
+            border: 2px solid black;
+            height: 40px;
+            width: 40px;
+            margin-left: 600px;
+            margin-top: 10px;
+            background-color: #ff6600; 
+        }
+        .col13_last{
+            border: 2px solid black;
+            height: 40px;
+            width: 40px;
+            margin-left: 600px;
+            margin-top: 10px;
+            background-color: #6d535e;
+        }
+        .lastrow_2{
+            border: 2px solid black;
+            height: 40px;
+            width: 40px;
+            margin-left: 650px;
+            margin-top: -44px;
+            display: flex;
+            background-color: #6d535e;
+        }
+        .lastrow_3{
+            border: 2px solid black;
+            height: 40px;
+            width: 40px;
+            margin-left: 700px;
+            margin-top: -44px;
+            display: flex;
+            background-color: #6d535e;
+        }
+        .lastrow_4{
+            border: 2px solid black;
+            height: 40px;
+            width: 40px;
+            margin-left: 750px;
+            margin-top: -44px;
+            display: flex;
+            background-color: #6d535e;
+        }
+        .lastrow_5{
+            border: 2px solid black;
+            height: 40px;
+            width: 40px;
+            margin-left: 800px;
+            margin-top: -44px;
+            display: flex;
+            background-color: #6d535e;
+        }
+        .lastrow_6{
+            border: 2px solid black;
+            height: 40px;
+            width: 40px;
+            margin-left: 850px;
+            margin-top: -44px;
+            display: flex;
+            background-color: #6d535e;
+        }
+        .col14_1{
+            border: 2px solid black;
+            height: 40px;
+            width: 40px;
+            margin-left: 650px;
+            margin-top: -313px;
+            background-color: #5aa02c;
+        }
+        .col14_23{
+            border: 2px solid black;
+            height: 40px;
+            width: 40px;
+            margin-left: 650px;
+            margin-top: 10px;
+            background-color: #aa0087;
+        }
+        .col14_45{
+            border: 2px solid black;
+            height: 40px;
+            width: 40px;
+            margin-left: 650px;
+            margin-top: 10px;
+            background-color: #ff6600;
+        }
+        .col15_1{
+            border: 2px solid black;
+            height: 40px;
+            width: 40px;
+            margin-left: 700px;
+            margin-top: -260px;
+            background-color: #5aa02c;
+        }
+        .col15_2{
+            border: 2px solid black;
+            height: 40px;
+            width: 40px;
+            margin-left: 700px;
+            margin-top: 10px;
+            background-color: #5aa02c;
+        }
+        .col15_34{
+            border: 2px solid black;
+            height: 40px;
+            width: 40px;
+            margin-left: 700px;
+            margin-top: 10px;
+            background-color: #aa0087;
+        }
+        .col15_5{
+            border: 2px solid black;
+            height: 40px;
+            width: 40px;
+            margin-left: 700px;
+            margin-top: 10px;
+            background-color: #ff6600;
+        }
+        .col16_1{
+            border: 2px solid black;
+            height: 40px;
+            width: 40px;
+            margin-left: 750px;
+            margin-top: -260px;
+            background-color: #5aa02c;
+        }
+        .col16_23{
+            border: 2px solid black;
+            height: 40px;
+            width: 40px;
+            margin-left: 750px;
+            margin-top: 10px;
+            background-color: #5aa02c;
+        }
+        .col16_45{
+            border: 2px solid black;
+            height: 40px;
+            width: 40px;
+            margin-left: 750px;
+            margin-top: 10px;
+            background-color: #aa0087;
+        }
+        .col17_1{
+            border: 2px solid black;
+            height: 40px;
+            width: 40px;
+            margin-left: 800px;
+            margin-top: -260px;
+            background-color: #ff0066;
+        }
+        .col17{
+            border: 2px solid black;
+            height: 40px;
+            width: 40px;
+            margin-left: 800px;
+            margin-top: 10px;
+            background-color: #ff0066;
+        }
+        .col18_1{
+            border: 2px solid black;
+            height: 40px;
+            width: 40px;
+            margin-left: 850px;
+            margin-top: -260px;
+            background-color: #ffcc00; 
+        }
+        .col18{
+            border: 2px solid black;
+            height: 40px;
+            width: 40px;
+            margin-left: 850px;
+            margin-top: 10px;
+            background-color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+    <center> <h1> THE PERIODIC TABLE OF ELEMENTS</h1></center>
+    <div class="outermostbox">
+        <div id="hydrogen"><h4> H </h4></div>
+        <div class="helium"></div>
+
+        <div class="col1"></div>
+        <div class="col1"></div>
+        <div class="col1"></div>
+        <div class="col1"></div>
+        <div class="col1"></div>
+        <div class="col1"></div>
+        
+        <div id="col2_1">4</div>
+        <div class="col2_2">12</div>
+        <div class="col2_2">20</div>
+        <div class="col2_2">38</div>
+        <div class="col2_2">56</div>
+        <div class="col2_2">88</div>
+        
+        <div class="col3_2elements">
+            <div class="col3_1"></div>
+            <div class="col3_2"></div>
+        </div>
+        
+        <div id="silicon">
+            14<p><b id="sili">Si</b></p>
+            <p>Silicon</p>
+        </div>
+
+        <div class="blue1"></div>
+        <div class="blue1"></div>
+        <div class="blue1"></div>
+        <div class="blue1"></div>
+
+        <div class="blue2_1"></div>
+        <div class="blue2"></div>
+        <div class="blue2"></div>
+        <div class="blue2"></div>
+
+        <div class="blue3_1"></div>
+        <div class="blue3"></div>
+        <div class="blue3"></div>
+        <div class="blue3"></div>
+
+        <div class="blue4_1"></div>
+        <div class="blue4"></div>
+        <div class="blue4"></div>
+        <div class="blue4"></div>
+
+        <div class="blue5_1"></div>
+        <div class="blue5"></div>
+        <div class="blue5"></div>
+        <div class="blue5"></div>
+
+        <div class="blue6_1"></div>
+        <div class="blue6"></div>
+        <div class="blue6"></div>
+        <div class="blue6"></div>
+
+        <div class="blue7_1"></div>
+        <div class="blue7"></div>
+        <div class="blue7"></div>
+        <div class="blue7"></div>
+
+        <div class="blue8_1"></div>
+        <div class="blue8"></div>
+        <div class="blue8"></div>
+        <div class="blue8"></div>
+
+        <div class="blue9_1"></div>
+        <div class="blue9"></div>
+        <div class="blue9"></div>
+        <div class="blue9"></div>
+
+        <div class="col13_1"></div>
+        <div class="col13"></div>
+        <div class="col13"></div>
+        <div class="col13"></div>
+        <div class="col13"></div>
+        <div class="col13_last"></div>
+
+        <div class="lastrow"></div>
+        <div class="lastrow_2"></div>
+        <div class="lastrow_3"></div>
+        <div class="lastrow_4"></div>
+        <div class="lastrow_5"></div>
+        <div class="lastrow_6"></div>
+
+        <div class="col14_1"></div>
+        <div class="col14_23"></div>
+        <div class="col14_23"></div>
+        <div class="col14_45"></div>
+        <div class="col14_45"></div>
+
+        <div class="col15_1"></div>
+        <div class="col15_2"></div>
+        <div class="col15_34"></div>
+        <div class="col15_34"></div>
+        <div class="col15_5"></div>
+
+        <div class="col16_1"></div>
+        <div class="col16_23"></div>
+        <div class="col16_23"></div>
+        <div class="col16_45"></div>
+        <div class="col16_45"></div>
+
+        <div class="col17_1"></div>
+        <div class="col17"></div>
+        <div class="col17"></div>
+        <div class="col17"></div>
+        <div class="col17"></div>
+
+        <div class="col18_1"></div>
+        <div class="col18"></div>
+        <div class="col18"></div>
+        <div class="col18"></div>
+        <div class="col18"></div>
+    </div>
+
+
+
+    <div class="l2">
+        <div class="last2"><h4>La</h4></div>
+        <div class="last2"></div>
+        <div class="last2"></div>
+        <div class="last2"></div>
+        <div class="last2"></div>
+        <div class="last2"></div>
+        <div class="last2"></div>
+        <div class="last2"></div>
+        <div class="last2"></div>
+        <div class="last2"></div>
+        <div class="last2"></div>
+        <div class="last2"></div>
+        <div class="last2"></div>
+        <div class="last2"></div>
+    </div>
+    <div class="end">
+        <div class="last"></div>
+        <div class="last"></div>
+        <div class="last"></div>
+        <div class="last"></div>
+        <div class="last"></div>
+        <div class="last"></div>
+        <div class="last"><b>Am</b></div>
+        <div class="last"></div>
+        <div class="last"></div>
+        <div class="last"></div>
+        <div class="last"></div>
+        <div class="last"></div>
+        <div class="last"></div>
+        <div class="last"><b>No</b></div>
+    </div>
+</body>
+</html>
