@@ -15,7 +15,8 @@
 
 <br/>
 
-### **Glimpses**
+### **A Glimpse**
 
 `Periodic Table`
-![pt]()
+
+![pt](https://github.com/pragati-tripathi05/Periodic-Table/blob/master/pt.png)
